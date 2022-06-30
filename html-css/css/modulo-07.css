@@ -1,0 +1,188 @@
+/* Importando CSS de Tabelas */
+@import url('tabelas.css');
+
+
+/* 
+
+	Herança
+
+	1. Sobreposição / Sobrescreve
+	2. Aplica a último estilo definido
+	3. Prioriza estilo específicas (com seletores mais próximos)
+	4. Se aplica a todas as propriedades
+
+ */
+
+
+html {
+	font-family: sans-serif;
+	color: #333333;
+}
+
+p {
+	color: #454545;
+}
+
+header p {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+div h1{
+align-content: center;
+margin-left: 80px;
+
+ 	font-size: 18px;
+
+}
+
+figcaption{
+   font-size: 12px;
+   margin-left: 200px;
+ }
+
+
+
+/* 
+
+	Combinadores 
+	
+	(espaço) seletor descendente 
+	(>) combinador de seletores filhos
+	(+) combinador de elementos irmãos adjacentes / que vem logo na sequencia
+	(~) combinador de elementos irmãos geral / após elemento de referência
+
+	
+*/
+
+
+header h2 {  /* modificar o h2 que esta dentro do header significa qualquer um neste caso é um descendente somente tem um espaco */
+	font-weight: 100;
+}
+
+
+header > h2 {     /*  este sinal modificar somente seletor filho que vem diretamente apos o header */
+	font-weight: 600;
+}
+
+h2 + p {     /* o  sinal de mais afeita o que vem na sequenca ele pasa por h2 e afeita somente o p
+se tiver mais p dentro nao vai afeitar  */
+	background: #FF0;
+	color: #333;
+}
+
+h2 ~ h5 { /*   este somente vai afeitar todo que esta com o h5 dentro do h2 ... diferente do mais que afeita somente o que vem na sequenca */
+	font-size: 1.2rem;
+}
+
+div ~ p {
+	text-transform: uppercase;
+}
+
+
+/* Pseudo-classes */
+
+a {
+	color: #555555;
+	text-decoration: none; /* o padrão é underline */
+	font-size: 1.5rem;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+a:visited {    /* marcar o link que ja foram visitado quando ja clicou num link e foi visitado fica em vermelhor por exemplo */
+	color: #f00;
+}
+
+a:active {   /* é somente para mostrar que esta ativo o usuario vai clicar o mostrar que esta ativo vibra sai do link */
+	color: #096;
+}
+
+a:hover {     /* o seletor hover permite que o que esta dentro do a fica mudando cor ao passar o mouse emcima */
+	color: #009;
+	background: #eee;
+}
+
+h2:hover {
+	color: #888;
+}
+
+
+/* 
+	Tipografia
+*/
+
+html {
+	font-family: sans-serif;
+}
+
+h1, h2, h3 {
+	font-weight: 400;
+	font-family: 'Limelight', cursive;  /*  este é do GOOGLE FONTS que chamei no modulo 7 html para chamaar essa fonte é so escrever google fonte  */
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.4rem;
+}
+
+ul {
+	padding-left: .5rem;
+	margin-left: .5rem;	
+}
+
+li {
+	letter-spacing: 0.01rem;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+h3 {
+	/* declaração resumida / completa */
+	font: italic bold 1.2rem/2 sans-serif;
+}
+
+
+/* 
+
+	Cores
+
+*/
+
+body {
+	background: url('../images/pattern.png') center top repeat #EEEEEE; /*  tem dois ponto porque o primeiro punto é para o meu diretorio o segundo para entra no css*/
+}
+
+section {
+	background: rgba(255, 255, 255, 0.95);   /*  no rgba o a é o ultimo valor rem no final */
+}
+
+p {
+	color: blue;
+	color: #034589;
+}
+
+header,
+footer {
+	background-color: #034589;
+}
+
+footer p {
+	color: rgb(255, 255, 255);
+}
+
+.navegacao {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 0.5rem;
+}
+
+.navegacao li a {
+	color: white;
+	font-size: 1.4rem;
+}
+
+.navegacao li a:hover {
+	background-color: rgba(150, 150, 200, .5);
+	color: #333333;
+}

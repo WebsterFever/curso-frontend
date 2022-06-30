@@ -1,0 +1,65 @@
+
+
+table{
+	
+	border: 1px solid ;
+	background: #ffffff;
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 90px;   
+
+}
+
+.heada{
+	background-color: #4169E1;
+
+}
+
+thead{
+	background-color: #B0E0E6;
+}
+
+table tr {
+	border: 1px solid black;
+}
+
+table tbody tr:nth-child(even) {  /* table tbody tr:nth-child(1) seria somente para a primeira linha  eu poderia trabalhar com odd para linha pare*/
+	 background-color: #B0E0E6;
+}
+
+table tbody tr:hover {
+	background-color: rgba(0, 0, 255, .2);
+}
+
+table th,
+table td {
+	padding: 1rem;
+	font-size: 1.6rem;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #B0E0E6;
+}
+
+table tr td:first-child {
+	
+	font-weight: bold;
+}
+
+table th {
+
+}
+
+.table-container {
+	padding: 2rem 1rem;
+}
+
+.table-container h3 {
+}
+
+.table-container tfoot {
+	background-color: #B0E0E6;
+}
+
+.table-container tfoot td {
+	font-weight: bold;
+}
