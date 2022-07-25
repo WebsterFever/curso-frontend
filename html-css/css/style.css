@@ -32,6 +32,10 @@ h1, h2, p, li {
 	color: #454545;
 }
 
+h3{
+	padding-left: 8px;
+}
+
 a {
 	color: #336;
 	text-decoration: none;
@@ -63,6 +67,10 @@ h2 {
 	height: 3rem;
 }
 
+.back{
+	background-color:pink;
+}
+
 .navegacao {
 	
 }
@@ -79,6 +87,7 @@ h2 {
 	display: block;
 	margin-bottom: .5rem;
 	width: 100%;
+	font-weight:1000;
 }
 
 form {
@@ -148,6 +157,55 @@ footer {
   color: white;
 }
 
+.capa{
+	color: white;
+}
+
+.capa span {
+	color: #f27609;
+	display: block;
+}
+.capa div {
+	display: inline-block ;
+	height: 650px;
+	
+}
+.profile-pic{
+	width: 40%;
+	text-align: center ;
+
+}
+
+.profile-pic img{
+	width: 400px;
+	border-radius: 400px;
+	margin-top: 60px ;
+	animation-name: profile-capa;
+	animation-duration: 2s;
+
+}
+
+.profile-title{
+	vertical-align: top;
+	width: 59%;  /*se colocamos aqui como 60 px vamos precisar declarar font-size: 0px; no body por isso vamos colocar como 50px e apagar font size no body*/
+	margin-top: 90px;
+}
+
+.profile-title h1{
+	text-transform: uppercase; /* assim vou deixar todoas as letras majuscula */
+	font-size: 30px;
+	margin-top: 10px;
+	font-weight: 700px;
+	line-height: 40px; /* espaco entre as linhas */
+	color:green;
+
+}
+
+.profile-title h2{
+	font-size: 16px;
+	font-weight: 100;
+	margin-top: -30px;
+}
 @media (max-width: 600px) {
   nav, article {
     width: 100%;

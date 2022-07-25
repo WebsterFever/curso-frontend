@@ -1,0 +1,85 @@
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+
+body{
+    font-size: 1.6rem;
+    color: #333;
+}
+
+footer{
+    color: #333;
+    font-size: 1.2rem;
+}
+
+p{
+    color: red;
+}
+
+div{
+    margin: 40px auto;
+}
+/*criar um ciclo*/
+#grafico-01{
+    background-color: brown;
+    width: 400px;
+    height: auto;
+    border-radius:50%;
+    overflow: hidden;
+
+    /*overflow: hidden; para esconder o conteudo que ultrapassa no div */
+    /* overflow: scroll; /*para criar  um scoll caso o texto ultrapasse o conteudo que ultrapassa no div */
+}
+
+#grafico-01 img{
+    width: 100%; 
+}
+
+
+/*trianglo*/
+#grafico-02{
+    background: transparent;
+  /*  width: 200px; tirando altura e largura vai se um triango*/
+  /*  height: 200px;*/
+    border-style: solid;
+    border-width: 60px 0 60px 120px;
+    border-color: transparent transparent
+    transparent blue;
+    width: 60px;
+ 
+}
+
+#imagem-vetorial{
+    width: 100px;
+    height: 600%;
+}
+
+#grafico-01{
+    filter: drop-shadow(8px 8px 10px #333); /*para criar sombra do lado da imagem*/
+    max-width: 100%;
+    margin-left: 300px ;
+    margin-top: 20px;
+}
+
+.filtro{
+    filter: grayscale(100%); /*escala de cinza*/
+    filter: blur(5px); /*ao passar o mouse se desfoca a imagem*/
+    filter: brightness(50%); /*brilho (100% = normal*/
+    filter:invert(100%) ; /*inversao de cores*/
+    filter: opacity(50%) ;/* a imagem fica normal sem um tipo de transparencia*/
+    filter: saturate(200%) sepia(100%); /* para conbinar filtro somente separados por espaco*/
+
+
+}
+
+.filtro:hover{
+    filter: grayscale(50%);
+    
+}
+
+
+
+

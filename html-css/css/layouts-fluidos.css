@@ -27,20 +27,24 @@ div{
     background-color: aqua;
     box-sizing: border-box; /*considera o padding e a borda na largura e altura */
     padding: 20px 0; /* este zero tira a barra de rolagem que aparece ao lado*/
-    height: 400px;
+    height: 40px;
 
 }
 
 nav{
+    background-color: gray;
     width: 20%;
     float: left;
     display: table;
+    display: block;
     height: 100%;
 }
 
 article{
+    background-color: ivory;
     width: 80%;
     float: left;
+    height: 100%;
     box-sizing: border-box; /*considera o padding e a borda na largura e altura */
 }
 
