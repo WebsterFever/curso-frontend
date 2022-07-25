@@ -155,5 +155,18 @@ footer small{
 #tenho-interesse form,.cog-form__content, .cog-form, .cog-cognito{
     background-color: #a0cbf1 !important;
     width: 100%;
+}
 
+@media (max-width: 420px) {
+
+    section nav, section article{
+        width: 100%;
+    }
+
+    .container{
+        padding-left: 1%;
+        padding-right: 1%;
+
+    }
+    
 }
