@@ -25,6 +25,7 @@ body{
     padding: 30px;
     border-radius: 4%;
     box-shadow: 3px 3px 1px 0px #00000060;
+    width: 400px;
 }
 
 h1{
@@ -71,6 +72,7 @@ h1{
     transition: all .3s ease-out;
 }
 
+
 .label-float input:focus + label,
 .label-float input:valid + label{
 
@@ -100,33 +102,11 @@ button:hover{
     color: #fff;
 }
 
-.justify-center{
+.justify-center{ 
     display: flex;
     justify-content: center;
 }
 
-hr{
-    margin-top: 10%;
-    margin-bottom: 10px;
-    width: 60px;
-}
-
-p{
-    color:#272262;
-    font-size: 14pt;
-    text-align: center;
-}
-
-a{
-    color: #7a3077;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all .3s ease-out;
-}
-
-a:hover{
-    color: #272262;
-}
 
 
 
