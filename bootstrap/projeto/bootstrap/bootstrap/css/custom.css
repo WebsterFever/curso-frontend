@@ -1,0 +1,41 @@
+header{
+    margin-top: 2%;
+}
+section {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+}
+
+.card {
+  width: 32%;
+  float: left;
+  margin: 5px;
+}
+
+h5, p{
+    margin: 2%;
+}
+
+p{
+    text-align: justify;
+}
+
+ul, a{
+    font-weight:bold
+}
+
+h2{
+    color: rgba(255, 0, 0, 0.29)
+}
+
+.voltar{
+    
+    margin-top: 4%;
+
+}
+
